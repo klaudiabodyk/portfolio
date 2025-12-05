@@ -32,7 +32,7 @@ function App() {
   const { t, i18n } = useTranslation()
   const placeholderSections: SectionConfig[] = []
 
-  const resolvedLanguage = (i18n.resolvedLanguage ?? i18n.language ?? 'pl')
+  const resolvedLanguage = (i18n.resolvedLanguage ?? i18n.language ?? 'en')
     .split('-')[0]
     .toLowerCase() as Language
 
@@ -283,43 +283,43 @@ function App() {
       content: (
         <div className="contact">
           <h2 className="contact__heading">{t('contact.heading')}</h2>
-          <div className="contact__links">
-            <a
-              href="https://github.com/klaudiabodyk"
-              target="_blank"
-              rel="noreferrer"
-              className="contact__link"
-            >
-              <img
-                src={github}
-                alt="GitHub"
-                className="contact__icon"
-                loading="lazy"
-              />
-              <span>GitHub</span>
-            </a>
-            <a
-              href="https://www.linkedin.com/in/klaudia-bodyk/"
-              target="_blank"
-              rel="noreferrer"
-              className="contact__link"
-            >
-              <img
-                src={linkedin}
-                alt="LinkedIn"
-                className="contact__icon"
-                loading="lazy"
-              />
-              <span>LinkedIn</span>
-            </a>
-          </div>
-          <div className="contact__details">
-            <a className="contact__detail" href="tel:+48530131800">
-              530&nbsp;131&nbsp;800
-            </a>
-            <a className="contact__detail" href="mailto:klaudia.bodyk@icloud.com">
-              klaudia.bodyk@icloud.com
-            </a>
+          <div className="contact__content">
+            <div className="contact__links">
+              <a
+                href="https://github.com/klaudiabodyk"
+                target="_blank"
+                rel="noreferrer"
+                className="contact__link"
+              >
+                <img
+                  src={github}
+                  alt="GitHub"
+                  className="contact__icon"
+                  loading="lazy"
+                />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/klaudia-bodyk/"
+                target="_blank"
+                rel="noreferrer"
+                className="contact__link"
+              >
+                <img
+                  src={linkedin}
+                  alt="LinkedIn"
+                  className="contact__icon"
+                  loading="lazy"
+                />
+              </a>
+            </div>
+            <div className="contact__details">
+              <a className="contact__detail" href="tel:+48530131800">
+                530&nbsp;131&nbsp;800
+              </a>
+              <a className="contact__detail" href="mailto:klaudia.bodyk@icloud.com">
+                klaudia.bodyk@icloud.com
+              </a>
+            </div>
           </div>
         </div>
       ),
