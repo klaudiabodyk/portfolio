@@ -1,4 +1,5 @@
 import type { ReactNode } from 'react'
+import { useIntersectionObserver } from '../hooks/useIntersectionObserver'
 
 interface SectionWrapperProps {
   readonly children?: ReactNode
@@ -11,16 +12,21 @@ const SectionWrapper = ({
   ariaLabel,
   className,
 }: SectionWrapperProps) => {
+  const [ref, isVisible] = useIntersectionObserver({ threshold: 0.15 })
+  
   const wrapperClassName = className
-    ? `section-wrapper ${className}`
-    : 'section-wrapper'
+    ? `section-wrapper ${className} ${isVisible ? 'is-visible' : ''}`
+    : `section-wrapper ${isVisible ? 'is-visible' : ''}`
 
   return (
-    <section className={wrapperClassName} aria-label={ariaLabel}>
+    <section 
+      ref={ref as React.RefObject<HTMLElement>} 
+      className={wrapperClassName} 
+      aria-label={ariaLabel}
+    >
       {children}
     </section>
   )
 }
 
 export default SectionWrapper
-
