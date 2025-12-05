@@ -14,6 +14,7 @@ import darkmodeNidleshori from './assets/darkmodeNidleshori.png'
 import inMyMind00005hori from './assets/inMyMind00005hori.png'
 import darkmodeNidles from './assets/darkmodeNidles.png'
 import inMyMind00005 from './assets/inMyMind00005.png'
+import pureCodeLogo from './assets/pureCodeLogo.png'
 import { ThemeProvider, useTheme } from './context/ThemeContext'
 import ThemeToggle from './components/ThemeToggle'
 
@@ -335,6 +336,13 @@ function AppContent() {
               <a className="contact__detail" href="mailto:klaudia.bodyk@icloud.com">
                 klaudia.bodyk@icloud.com
               </a>
+            </div>
+            <div className="contact__logo-bottom"> 
+              <img
+                src={pureCodeLogo}
+                alt="Pure Code Logo"
+                className="contact__logo-bottom"
+              />
             </div>
           </div>
         </div>
