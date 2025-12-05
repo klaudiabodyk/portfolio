@@ -34,7 +34,13 @@ const translation = {
     headingTop: 'My',
     headingBottom: 'Projects',
     note:
-      'Carousel placeholder – with pop-ups and short descriptions of each project. Examples: Maja, Asia, Kmaja, PanTulipan, Dashboard.',
+      'My latest projects',
+    items: {
+      manianaa: 'https://manianaa.com/',
+      joannaadamek: 'https://joannaadamek.com.pl/',
+      dashboardmaniany: 'https://dashboardmaniany.netlify.app',
+      salazabawdiggers: 'https://salazabawdiggers.pl',
+    },
   },
   lecturer: {
     headingPrimary: 'AI Lecturer',
