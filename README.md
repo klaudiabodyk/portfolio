@@ -1,73 +1,77 @@
-# React + TypeScript + Vite
+# Klaudia Bodyk - Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive personal portfolio website built with React 19, TypeScript, and Vite. This project showcases my skills, projects, and experience as a Software Engineer and AI Trainer.
 
-Currently, two official plugins are available:
+![Portfolio Preview](./src/assets/pureCodeLogo.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## React Compiler
+- **Modern Tech Stack**: Built with React 19, TypeScript, and Vite for fast performance.
+- **Internationalization (i18n)**: Full support for English and Polish languages using `react-i18next`.
+- **Dark & Light Mode**: Themed interface with seamless switching via CSS variables.
+- **Interactive Carousel**: 3D Coverflow project showcase using `swiper`.
+- **Responsive Design**: Fully responsive layout optimized for mobile, tablet, and desktop.
+- **Animations**: Smooth fade-in effects and floating elements for an engaging user experience.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tech Stack
 
-## Expanding the ESLint configuration
+- **Framework**: React 19
+- **Language**: TypeScript
+- **Build Tool**: Vite
+- **Styling**: Pure CSS (CSS Variables, Flexbox/Grid, Animations)
+- **Internationalization**: i18next, react-i18next
+- **Carousel**: Swiper.js
+- **Linting**: ESLint
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 📦 Installation & Setup
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+1.  **Clone the repository:**
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+    ```bash
+    git clone https://github.com/klaudiabodyk/portfolio.git
+    cd portfolio
+    ```
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+2.  **Install dependencies:**
+
+    ```bash
+    npm install
+    ```
+
+3.  **Run the development server:**
+
+    ```bash
+    npm run dev
+    ```
+
+    The app will be available at `http://localhost:5173`.
+
+## 🏗️ Project Structure
+
+```text
+src/
+├── assets/          # Images and icons
+├── components/      # Reusable UI components (ProjectCarousel, ThemeToggle, etc.)
+├── context/         # React Context (ThemeContext)
+├── hooks/           # Custom hooks
+├── locales/         # Translation files (en/pl)
+├── App.tsx          # Main application component
+├── App.css          # Global and component-specific styles
+└── main.tsx         # Entry point
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🎨 Customization
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### Adding New Projects
+To add new projects to the carousel:
+1.  Add your project image to `src/assets/`.
+2.  Update `src/components/ProjectCarousel.tsx` to import the image and add a new entry to the `projects` array.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### Updating Translations
+Translation files are located in `src/locales/`. Update `en/translation.ts` and `pl/translation.ts` to modify text content.
+
+## 📬 Contact
+
+- **Email**: [klaudia.bodyk@icloud.com](mailto:klaudia.bodyk@icloud.com)
+- **LinkedIn**: [Klaudia Bodyk](https://www.linkedin.com/in/klaudia-bodyk/)
+- **GitHub**: [klaudiabodyk](https://github.com/klaudiabodyk)
