@@ -15,6 +15,7 @@ import inMyMind00005hori from './assets/inMyMind00005hori.png'
 import darkmodeNidles from './assets/darkmodeNidles.png'
 import inMyMind00005 from './assets/inMyMind00005.png'
 import pureCodeLogo from './assets/pureCodeLogo.png'
+import ProjectCarousel from './components/ProjectCarousel'
 import { ThemeProvider, useTheme } from './context/ThemeContext'
 import ThemeToggle from './components/ThemeToggle'
 
@@ -90,9 +91,9 @@ function AppContent() {
       className: 'section-wrapper--hero',
       content: (
         <div className="hero">
-          <button className="hero__cta" type="button">
+          <a className="hero__cta" href="mailto:klaudia.bodyk@icloud.com">
             {t('hero.cta')}
-          </button>
+          </a>
           <div className="hero__title">
             <span className="hero__title-primary">
               {t('hero.titlePrimary')}{' '}
@@ -157,7 +158,7 @@ function AppContent() {
           </div>
           <div className="projects__content">
             <div className="projects__gallery" role="list">
-             
+              <ProjectCarousel />
             </div>
             <div className="projects__note">
               <img

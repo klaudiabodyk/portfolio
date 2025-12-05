@@ -34,7 +34,13 @@ const translation = {
     headingTop: 'Moje',
     headingBottom: 'Projekty',
     note:
-      'Tutaj carousel – z pop-upami i krótkimi opisami stron. Przykłady: Maja, Asia, Kmaja, PanTulipan, Dashboard.',
+      'Moje najnowsze projekty',
+    items: {
+      manianaa: 'https://manianaa.com/',
+      joannaadamek: 'https://joannaadamek.com.pl/',
+      dashboardmaniany: 'https://dashboardmaniany.netlify.app',
+      salazabawdiggers: 'https://salazabawdiggers.pl',
+    },
   },
   lecturer: {
     headingPrimary: 'Wykładowca AI',
