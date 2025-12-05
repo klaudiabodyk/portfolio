@@ -1,11 +1,8 @@
 import type { ReactNode } from 'react'
 import { useTranslation } from 'react-i18next'
 import './App.css'
-import automationVisual from './assets/inMyMind00005.png'
 import circleCake from './assets/circlecake.svg'
-import fireWave from './assets/firewave.png'
 import magicStar from './assets/magicstar.svg'
-import operationsVisual from './assets/inMyMind00005.png'
 import pinkPeak from './assets/pinkpeak.png'
 import niceCodeSnippets from './assets/niceCode.png'
 import SectionWrapper from './components/SectionWrapper'
@@ -13,6 +10,12 @@ import orangeBow from './assets/orangebow.svg'
 import happyLeaf from './assets/happyleaf.svg'
 import linkedin from './assets/linkedin.svg'
 import github from './assets/github.svg'
+import darkmodeNidleshori from './assets/darkmodeNidleshori.png'
+import inMyMind00005hori from './assets/inMyMind00005hori.png'
+import darkmodeNidles from './assets/darkmodeNidles.png'
+import inMyMind00005 from './assets/inMyMind00005.png'
+import { ThemeProvider, useTheme } from './context/ThemeContext'
+import ThemeToggle from './components/ThemeToggle'
 
 type SectionConfig = {
   readonly id: string
@@ -28,8 +31,9 @@ type LanguageOption = {
   readonly label: string
 }
 
-function App() {
+function AppContent() {
   const { t, i18n } = useTranslation()
+  const { theme } = useTheme()
   const placeholderSections: SectionConfig[] = []
 
   const resolvedLanguage = (i18n.resolvedLanguage ?? i18n.language ?? 'en')
@@ -128,7 +132,7 @@ function App() {
           </div>
           <div className="about__visual">
             <img
-              src={fireWave}
+              src={theme === 'dark' ? darkmodeNidleshori : inMyMind00005hori}
               alt={t('about.visualAlt')}
               className="about__image"
               loading="lazy"
@@ -210,18 +214,30 @@ function App() {
       content: (
         <div className="solutions">
           <div className="solutions__media">
-            <img
-              src={automationVisual}
-              alt={t('solutions.primaryAlt')}
-              className="solutions__image solutions__image--primary"
-              loading="lazy"
-            />
-            <img
-              src={operationsVisual}
-              alt={t('solutions.secondaryAlt')}
-              className="solutions__image solutions__image--secondary"
-              loading="lazy"
-            />
+            <div className="solutions__image-wrapper">
+              <img
+                src={theme === 'dark' ? darkmodeNidles : inMyMind00005}
+                alt={t('solutions.primaryAlt')}
+                className="solutions__image solutions__image--primary"
+                loading="lazy"
+              />
+              <div
+                className="solutions__image-overlay solutions__image-overlay--bottom"
+                aria-hidden="true"
+              />
+            </div>
+            <div className="solutions__image-wrapper">
+              <img
+                src={theme === 'dark' ? darkmodeNidles : inMyMind00005}
+                alt={t('solutions.secondaryAlt')}
+                className="solutions__image solutions__image--secondary"
+                loading="lazy"
+              />
+              <div
+                className="solutions__image-overlay solutions__image-overlay--top"
+                aria-hidden="true"
+              />
+            </div>
           </div>
           <div className="solutions__content">
             <div className="solutions__heading">
@@ -330,25 +346,28 @@ function App() {
   return (
     <div className="page">
       <header className="page__header">
-        <div className="language-switcher">
-          <span className="language-switcher__label">
-            {t('languageSwitcher.label')}:
-          </span>
-          {languageOptions.map((option) => (
-            <button
-              key={option.code}
-              type="button"
-              className={`language-switcher__button ${
-                resolvedLanguage === option.code
-                  ? 'language-switcher__button--active'
-                  : ''
-              }`}
-              onClick={() => changeLanguage(option.code)}
-              aria-pressed={resolvedLanguage === option.code}
-            >
-              {option.label}
-            </button>
-          ))}
+        <div className="header-controls">
+          <div className="language-switcher">
+            <span className="language-switcher__label">
+              {t('languageSwitcher.label')}:
+            </span>
+            {languageOptions.map((option) => (
+              <button
+                key={option.code}
+                type="button"
+                className={`language-switcher__button ${
+                  resolvedLanguage === option.code
+                    ? 'language-switcher__button--active'
+                    : ''
+                }`}
+                onClick={() => changeLanguage(option.code)}
+                aria-pressed={resolvedLanguage === option.code}
+              >
+                {option.label}
+              </button>
+            ))}
+          </div>
+          <ThemeToggle />
         </div>
       </header>
       {sections.map(({ id, ariaLabel, className, content }) => (
@@ -361,6 +380,14 @@ function App() {
         </SectionWrapper>
       ))}
     </div>
+  )
+}
+
+function App() {
+  return (
+    <ThemeProvider>
+      <AppContent />
+    </ThemeProvider>
   )
 }
 
