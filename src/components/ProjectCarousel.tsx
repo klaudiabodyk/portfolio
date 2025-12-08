@@ -13,7 +13,7 @@ import project2 from '../assets/Joanna Adamek.png';
 import project3 from '../assets/Dashboard.png';
 import project4 from '../assets/Koparki.png';
 
-import './ProjectCarousel.css';
+import './styles/ProjectCarousel.css';
 
 interface Project {
   id: number;
