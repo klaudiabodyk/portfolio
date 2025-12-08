@@ -1,5 +1,6 @@
 import type { ReactNode } from 'react'
 import { useIntersectionObserver } from '../hooks/useIntersectionObserver'
+import './styles/SectionWrapper.css'
 
 interface SectionWrapperProps {
   readonly children?: ReactNode
