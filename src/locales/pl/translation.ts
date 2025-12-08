@@ -192,6 +192,32 @@ const translation = {
       description: 'Praktyczne warsztaty z zastosowań sztucznej inteligencji w biznesie i rozwoju oprogramowania.',
       subtitle: 'Szkolenia AI i Warsztaty',
     },
+    upcomingTrainings: {
+      heading: 'Nadchodzące Szkolenia',
+      course: {
+        title: 'Prawo nowych technologii',
+        subtitle: 'Studia podyplomowe na Uniwersytecie Ekonomicznym we Wrocławiu',
+        description: 'Kompleksowy program podyplomowy dotyczący aspektów prawnych nowych technologii, skupiający się na sztucznej inteligencji, danych cyfrowych oraz usługach IT. Program przekazuje praktyczną wiedzę prawnikom i ekspertom technologicznym.',
+        subject: 'Przedmiot: Narzędzia AI w pracy prawnika',
+        details: {
+          duration: '2 semestry, 156 godzin',
+          recruitmentDeadline: 'Rekrutacja do 14 lutego 2026',
+          startDate: 'Rozpoczęcie 28 lutego 2026',
+          price: '8 500 PLN',
+          format: 'Zajęcia weekendowe, stacjonarne na uczelni',
+        },
+        featuresTitle: 'Szczegóły programu:',
+        features: [
+          'Praktyczne i międzydyscyplinarne podejście',
+          'Regulacje prawne dotyczące AI, ochrony danych i umów IT',
+          'Zarządzanie ryzykiem i compliance',
+          'Dostęp do platformy Microsoft 365',
+          'Zasoby biblioteczne i konsultacje',
+        ],
+        cta: 'Dowiedz się więcej',
+        link: 'https://www.podyplomowe.ue.wroc.pl/114,2381,prawo_nowych_technologii.html',
+      },
+    },
   },
   softwareEngineer: {
     hero: {

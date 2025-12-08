@@ -190,6 +190,32 @@ const translation = {
       description: 'Practical workshops on applying artificial intelligence in business and software development.',
       subtitle: 'AI Training & Workshops',
     },
+    upcomingTrainings: {
+      heading: 'Upcoming Trainings',
+      course: {
+        title: 'Law of New Technologies',
+        subtitle: 'Postgraduate Studies at University of Economics in Wrocław',
+        description: 'Comprehensive postgraduate program on legal aspects of new technologies, focusing on artificial intelligence, digital data, and IT services. The program provides practical knowledge for legal professionals and technology experts.',
+        subject: 'Subject: AI Tools in Legal Practice',
+        details: {
+          duration: '2 semesters, 156 hours',
+          recruitmentDeadline: 'Recruitment until February 14, 2026',
+          startDate: 'Starts February 28, 2026',
+          price: '8,500 PLN',
+          format: 'Weekend classes, in-person at the university',
+        },
+        featuresTitle: 'Program Features:',
+        features: [
+          'Practical and interdisciplinary approach',
+          'Legal regulations for AI, data protection, and IT contracts',
+          'Risk management and compliance',
+          'Microsoft 365 platform access',
+          'Library resources and consulting',
+        ],
+        cta: 'Learn More',
+        link: 'https://www.podyplomowe.ue.wroc.pl/114,2381,prawo_nowych_technologii.html',
+      },
+    },
   },
   softwareEngineer: {
     hero: {

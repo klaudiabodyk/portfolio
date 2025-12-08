@@ -71,6 +71,63 @@ const AiWorkshops = () => {
       ),
     },
     {
+      id: 'ai-workshops-upcoming-trainings',
+      ariaLabel: 'Upcoming Trainings',
+      className: 'section-wrapper--upcoming-trainings',
+      content: (
+        <div className="upcoming-trainings">
+          <h2 className="upcoming-trainings__heading">
+            {t('aiWorkshops.upcomingTrainings.heading')}
+          </h2>
+          <div className="upcoming-trainings__course">
+            <div className="course__header">
+              <h3 className="course__title">{t('aiWorkshops.upcomingTrainings.course.title')}</h3>
+              <p className="course__subtitle">{t('aiWorkshops.upcomingTrainings.course.subtitle')}</p>
+            </div>
+            <p className="course__description">{t('aiWorkshops.upcomingTrainings.course.description')}</p>
+            <div className="course__subject-highlight">
+              <strong>{t('aiWorkshops.upcomingTrainings.course.subject')}</strong>
+            </div>
+            <div className="course__details">
+              <div className="course__detail-item">
+                <span className="detail__label">{t('aiWorkshops.upcomingTrainings.course.details.duration')}</span>
+              </div>
+              <div className="course__detail-item">
+                <span className="detail__label">{t('aiWorkshops.upcomingTrainings.course.details.recruitmentDeadline')}</span>
+              </div>
+              <div className="course__detail-item">
+                <span className="detail__label">{t('aiWorkshops.upcomingTrainings.course.details.startDate')}</span>
+              </div>
+              <div className="course__detail-item">
+                <span className="detail__label">{t('aiWorkshops.upcomingTrainings.course.details.price')}</span>
+              </div>
+              <div className="course__detail-item">
+                <span className="detail__label">{t('aiWorkshops.upcomingTrainings.course.details.format')}</span>
+              </div>
+            </div>
+            <div className="course__features">
+              <h4 className="features__title">{t('aiWorkshops.upcomingTrainings.course.featuresTitle')}</h4>
+              <ul className="features__list">
+                {(t('aiWorkshops.upcomingTrainings.course.features', { returnObjects: true }) as string[]).map((feature: string, index: number) => (
+                  <li key={index} className="features__item">{feature}</li>
+                ))}
+              </ul>
+            </div>
+            <div className="course__cta">
+              <a
+                href={t('aiWorkshops.upcomingTrainings.course.link')}
+                target="_blank"
+                rel="noreferrer"
+                className="course__cta-link"
+              >
+                {t('aiWorkshops.upcomingTrainings.course.cta')}
+              </a>
+            </div>
+          </div>
+        </div>
+      ),
+    },
+    {
       id: 'ai-workshops-contact',
       ariaLabel: t('ariaLabels.contact'),
       className: 'section-wrapper--contact',
