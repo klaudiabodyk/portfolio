@@ -2,7 +2,7 @@
 
 A modern, responsive personal portfolio website built with React 19, TypeScript, and Vite. This project showcases my skills, projects, and experience as a Software Engineer and AI Trainer.
 
-![Portfolio Preview](./src/assets/pureCodeLogo.png)
+https://klaudiabodyk.netlify.app
 
 ## 🚀 Features
 
