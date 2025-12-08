@@ -81,7 +81,7 @@
 
 .lecturer__icon {
   width: clamp(65px, 6vw, 65px);
-  height: clamp(65px, 6vw, 56px);
+  height: clamp(56px, 6vw, 65px);
   filter: drop-shadow(0 14px 28px rgba(255, 120, 24, 0.35));
 }
 
@@ -205,6 +205,226 @@
 
 .contact__logo-bottom:hover {
   transform: scale(1.1);
+}
+
+/* Upcoming Trainings Section */
+.upcoming-trainings {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(32px, 4vw, 56px);
+  width: 100%;
+}
+
+.upcoming-trainings__heading {
+  margin: 0;
+  font-size: clamp(2.4rem, 6.5vw, 4.2rem);
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  max-width: 960px;
+  line-height: 0.9;
+  color: var(--text-primary);
+}
+
+.upcoming-trainings__course {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(24px, 3vw, 32px);
+  padding: clamp(24px, 4vw, 40px);
+  border-radius: 16px;
+  background: linear-gradient(135deg, rgba(192, 132, 252, 0.05) 0%, rgba(255, 120, 24, 0.05) 100%);
+  border: 1px solid rgba(192, 132, 252, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.course__header {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.course__title {
+  margin: 0;
+  font-size: clamp(1.8rem, 4vw, 2.4rem);
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: 0.08em;
+}
+
+.course__subtitle {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-accent);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.course__description {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  text-align: left;
+}
+
+.course__subject-highlight {
+  padding: 16px;
+  background: linear-gradient(135deg, rgba(255, 120, 24, 0.1) 0%, rgba(192, 132, 252, 0.1) 100%);
+  border-radius: 8px;
+  border-left: 4px solid var(--text-accent);
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--text-primary);
+}
+
+.course__details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
+
+.course__detail-item {
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  border: 1px solid rgba(192, 132, 252, 0.15);
+}
+
+.detail__label {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  letter-spacing: 0.04em;
+}
+
+.course__features {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.features__title {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.features__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 12px;
+}
+
+.features__item {
+  padding: 12px 16px;
+  background: rgba(192, 132, 252, 0.08);
+  border-radius: 6px;
+  border-left: 3px solid var(--text-accent);
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--text-secondary);
+}
+
+.course__cta {
+  display: flex;
+  justify-content: center;
+  margin-top: 8px;
+}
+
+.course__cta-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 28px;
+  background: linear-gradient(135deg, var(--text-accent) 0%, rgba(192, 132, 252, 0.8) 100%);
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(192, 132, 252, 0.3);
+}
+
+.course__cta-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(192, 132, 252, 0.4);
+  background: linear-gradient(135deg, rgba(255, 120, 24, 0.9) 0%, var(--text-accent) 100%);
+}
+
+/* Responsive styles for Upcoming Trainings */
+@media (max-width: 960px) {
+  .upcoming-trainings__heading {
+    text-align: center;
+    align-items: center;
+  }
+
+  .upcoming-trainings__course {
+    padding: 20px;
+  }
+
+  .course__details {
+    flex-direction: column;
+  }
+
+  .features__list {
+    grid-template-columns: 1fr;
+  }
+
+  .course__subject-highlight {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .upcoming-trainings__heading {
+    font-size: 2.8rem;
+  }
+
+  .course__title {
+    font-size: 2rem;
+  }
+
+  .course__description {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .upcoming-trainings__heading {
+    font-size: 2.2rem;
+  }
+
+  .course__title {
+    font-size: 1.6rem;
+  }
+
+  .course__subject-highlight {
+    font-size: 13px;
+    padding: 12px;
+  }
+
+  .features__item {
+    font-size: 12px;
+    padding: 10px 12px;
+  }
+
+  .course__cta-link {
+    padding: 12px 24px;
+    font-size: 13px;
+  }
 }
 
 /* Contact icon pulse */
