@@ -1,55 +1,12 @@
-.hero {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 24px;
-  width: 100%;
-  max-width: 920px;
-  text-align: center;
-}
-
-.hero__title {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 12px;
-}
-
-.hero__title-primary {
-  font-size: 88px;
-  font-weight: 800;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--text-primary);
-}
-
-.hero__description {
-  font-size: 22px;
-  line-height: 1.8;
-  color: var(--text-secondary);
-}
-
-.hero__subtitle {
-  font-size: 16px;
-  letter-spacing: 0.36em;
-  text-transform: uppercase;
-  font-weight: 800;
-  color: var(--text-muted);
-}
-
 .lecturer {
   display: flex;
   flex-direction: column;
-  gap: clamp(32px, 4vw, 56px);
+  gap: clamp(32px, 5vw, 56px);
   width: 100%;
 }
 
 .lecturer__heading {
   margin: 0;
-  display: flex;
-  flex-direction: column;
-  gap: clamp(4px, 1.5vw, 12px);
   font-size: clamp(2.4rem, 6.5vw, 4.2rem);
   font-weight: 800;
   letter-spacing: 0.12em;
@@ -57,157 +14,56 @@
   max-width: 960px;
   line-height: 0.9;
   color: var(--text-primary);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .lecturer__heading span {
-  display: inline-block;
   color: var(--text-accent);
 }
 
 .lecturer__body {
   display: flex;
-  align-items: stretch;
   gap: clamp(32px, 5vw, 64px);
+  align-items: center;
   width: 100%;
 }
 
 .lecturer__details {
-  flex: 1 1 45%;
+  flex: 1 1 55%;
   display: flex;
   flex-direction: column;
   gap: clamp(24px, 3vw, 32px);
-  max-width: 420px;
+  align-items: flex-start;
 }
 
 .lecturer__icon {
-  width: clamp(65px, 6vw, 65px);
-  height: clamp(56px, 6vw, 65px);
-  filter: drop-shadow(0 14px 28px rgba(255, 120, 24, 0.35));
+  width: clamp(48px, 6vw, 72px);
+  height: clamp(48px, 6vw, 72px);
+  filter: drop-shadow(0 12px 24px rgba(255, 120, 24, 0.35));
 }
 
 .lecturer__description {
   margin: 0;
-  font-size: 14px;
-  line-height: 1.85;
+  font-size: clamp(1rem, 2.1vw, 1.18rem);
+  line-height: 1.9;
   color: var(--text-secondary);
 }
 
 .lecturer__visual {
-  flex: 1 1 55%;
+  flex: 1 1 45%;
   display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
+  justify-content: center;
+  align-items: center;
 }
 
 .lecturer__image {
-  width: min(100%, 520px);
-  height: 70%;
+  width: min(100%, 420px);
+  border-radius: 24px;
   box-shadow: 0 24px 48px var(--shadow-color);
 }
 
-.contact {
-  display: flex;
-  flex-direction: column;
-  gap: clamp(32px, 4vw, 48px);
-  width: 100%;
-}
-
-.contact__content {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  width: 100%;
-  gap: clamp(24px, 4vw, 48px);
-}
-
-.contact__heading {
-  margin: 0;
-  font-size: clamp(2.6rem, 7vw, 4.4rem);
-  font-weight: 800;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--contact-heading);
-}
-
-.contact__links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: clamp(16px, 3vw, 32px);
-}
-
-.contact__link {
-  display: inline-flex;
-  align-items: center;
-  gap: clamp(12px, 2vw, 16px);
-  padding: 12px 20px;
-  border-radius: 18px;
-  color: var(--contact-link-color);
-  font-weight: 600;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  transition: transform 0.2s ease, border-color 0.2s ease;
-  border: 1px solid transparent; /* Ensure border exists for hover transition */
-}
-
-.contact__link:hover {
-  transform: translateY(-2px);
-  border-color: rgba(192, 132, 252, 0.8);
-}
-
-.contact__icon {
-  width: 150px;
-  height: 150px;
-  filter: drop-shadow(0 12px 24px rgba(192, 132, 252, 0.35));
-}
-
-.contact__details {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 12px;
-  font-size: clamp(1.1rem, 2.5vw, 1.35rem);
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  color: var(--contact-link-color);
-  margin-bottom: 5px;
-}
-
-.contact__detail {
-  color: inherit;
-  text-decoration: none;
-  transition: opacity 0.2s ease;
-}
-
-.contact__detail:hover {
-  opacity: 0.8;
-}
-
-.contact__logo-bottom {
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  object-fit: cover;
-  transition: transform 0.3s ease;
-  align-self: center;
-}
-
-@media (min-width: 960px) {
-  .contact__logo-bottom {
-    margin-top: 96px;
-  }
-}
-
-@media (max-width: 959px) {
-  .contact__logo-bottom {
-    margin-top: 48px;
-  }
-}
-
-.contact__logo-bottom:hover {
-  transform: scale(1.1);
-}
-
-/* Upcoming Trainings Section */
 .upcoming-trainings {
   display: flex;
   flex-direction: column;
@@ -217,6 +73,7 @@
 
 .upcoming-trainings__heading {
   margin: 0;
+  padding-top: clamp(32px, 5vw, 48px);
   font-size: clamp(2.4rem, 6.5vw, 4.2rem);
   font-weight: 800;
   letter-spacing: 0.12em;
@@ -364,108 +221,6 @@
   background: linear-gradient(135deg, rgba(255, 120, 24, 0.9) 0%, var(--text-accent) 100%);
 }
 
-/* Responsive styles for Upcoming Trainings */
-@media (max-width: 960px) {
-  .upcoming-trainings__heading {
-    text-align: center;
-    align-items: center;
-  }
-
-  .upcoming-trainings__course {
-    padding: 20px;
-  }
-
-  .course__details {
-    flex-direction: column;
-  }
-
-  .features__list {
-    grid-template-columns: 1fr;
-  }
-
-  .course__subject-highlight {
-    text-align: center;
-  }
-}
-
-@media (max-width: 768px) {
-  .upcoming-trainings__heading {
-    font-size: 2.8rem;
-  }
-
-  .course__title {
-    font-size: 2rem;
-  }
-
-  .course__description {
-    font-size: 13px;
-  }
-}
-
-@media (max-width: 480px) {
-  .upcoming-trainings__heading {
-    font-size: 2.2rem;
-  }
-
-  .course__title {
-    font-size: 1.6rem;
-  }
-
-  .course__subject-highlight {
-    font-size: 13px;
-    padding: 12px;
-  }
-
-  .features__item {
-    font-size: 12px;
-    padding: 10px 12px;
-  }
-
-  .course__cta-link {
-    padding: 12px 24px;
-    font-size: 13px;
-  }
-}
-
-/* Contact icon pulse */
-.contact__icon {
-  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
-}
-
-.contact__link:hover .contact__icon {
-  transform: scale(1.1) rotate(5deg);
-}
-
-/* Hero elements stagger */
-.hero__title-primary,
-.hero__title-name,
-.hero__description,
-.hero__cta,
-.hero__subtitle {
-  opacity: 0;
-  animation: fadeInUp 0.8s ease-out forwards;
-}
-
-.hero__title-primary {
-  animation-delay: 0.2s;
-}
-.hero__title-by {
-  animation-delay: 0.4s;
-}
-.hero__title-name {
-  animation-delay: 0.6s;
-}
-.hero__description {
-  animation-delay: 0.8s;
-}
-.hero__subtitle {
-  animation-delay: 1s;
-}
-.hero__cta {
-  animation-delay: 1.2s;
-}
-
-/* Responsive styles for AiWorkshops page */
 @media (max-width: 960px) {
   .lecturer__heading {
     text-align: center;
@@ -492,64 +247,76 @@
     display: none;
   }
 
-  .contact {
-    align-items: center;
-  }
-
-  .contact__content {
-    flex-direction: column;
-    gap: 32px;
-    align-items: center;
-  }
-
-  .contact__links {
-    justify-content: center;
-  }
-
-  .contact__details {
-    align-items: center;
+  .upcoming-trainings__heading {
     text-align: center;
+    align-items: center;
   }
 
-  .contact__icon {
-    width: 100px;
-    height: 100px;
+  .upcoming-trainings__course {
+    padding: 20px;
+  }
+
+  .course__details {
+    flex-direction: column;
+  }
+
+  .features__list {
+    grid-template-columns: 1fr;
+  }
+
+  .course__subject-highlight {
+    text-align: center;
   }
 }
 
 @media (max-width: 768px) {
-  .hero__title-primary {
-    font-size: 64px;
+  .lecturer__heading {
+    font-size: clamp(2rem, 5.5vw, 3.2rem);
   }
 
-  .hero__title-by {
-    font-size: 56px;
+  .upcoming-trainings__heading {
+    font-size: 2.8rem;
   }
 
-  .hero__title-name {
-    font-size: 80px;
+  .course__title {
+    font-size: 2rem;
+  }
+
+  .course__description {
+    font-size: 13px;
   }
 }
 
 @media (max-width: 480px) {
-  .hero__title-primary {
-    font-size: 42px;
+  .lecturer__heading {
+    font-size: 2.2rem;
   }
 
-  .hero__title-by {
-    font-size: 36px;
+  .lecturer__description {
+    font-size: 13px;
   }
 
-  .hero__title-name {
-    font-size: 52px;
+  .upcoming-trainings__heading {
+    font-size: 2.2rem;
   }
 
-  .hero__description {
-    font-size: 18px;
+  .course__title {
+    font-size: 1.6rem;
   }
 
-  .hero__cta {
-    padding: 14px 28px;
-    font-size: 0.9rem;
+  .course__subject-highlight {
+    font-size: 13px;
+    padding: 12px;
+  }
+
+  .features__item {
+    font-size: 12px;
+    padding: 10px 12px;
+  }
+
+  .course__cta-link {
+    padding: 12px 24px;
+    font-size: 13px;
   }
 }
+

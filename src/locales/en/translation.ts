@@ -29,6 +29,8 @@ const translation = {
     description:
       'Software Engineer merging frontend with AI. I build scalable React/TypeScript interfaces and ship language-model features that genuinely speed up product teams.',
     subtitle: 'Software Engineer & AI Trainer',
+    emailSubject: 'Inquiry - Pure Code',
+    emailBody: 'Hello,\n\nI would like to discuss your offer. I am interested in collaboration and would like to know more details.\n\nBest regards',
   },
   services: {
     heading: 'My Services',
@@ -47,6 +49,11 @@ const translation = {
       description: 'Modern websites and CMS systems for self-managed content.',
       cta: 'View offer',
     },
+    instagramBeauty: {
+      title: 'Instagram Beauty',
+      description: 'Websites with online booking for beauty businesses – turn your Instagram into a full-fledged business.',
+      cta: 'View offer',
+    },
   },
   about: {
     headingLinePrimary: 'Senior Software Engineer',
@@ -60,7 +67,7 @@ const translation = {
     headingTop: 'My',
     headingBottom: 'Projects',
     note:
-      'My latest projects',
+      '• I build apps and websites that sell for you 24/7.\n• I automate sales, payments and newsletters – you don\'t worry about technical stuff.\n• Portfolio in 24h - quick start, mobile, integrated with Instagram.',
     items: {
       manianaa: 'https://manianaa.com/',
       joannaadamek: 'https://joannaadamek.com.pl/',
@@ -183,12 +190,16 @@ const translation = {
   },
   contact: {
     heading: 'Get in touch',
+    emailSubject: 'Inquiry about your offer - Pure Code Portfolio',
+    emailBody: 'Hello,\n\nI would like to discuss your offer. Please contact me to discuss the details.\n\nBest regards',
   },
   aiWorkshops: {
     hero: {
       title: 'AI Workshops',
       description: 'Practical workshops on applying artificial intelligence in business and software development.',
       subtitle: 'AI Training & Workshops',
+      emailSubject: 'Inquiry about AI Workshops',
+      emailBody: 'Hello,\n\nI would like to discuss your AI workshops. I am interested in organizing training for my company/team. Please contact me to discuss the details.\n\nBest regards',
     },
     upcomingTrainings: {
       heading: 'Upcoming Trainings',
@@ -221,6 +232,8 @@ const translation = {
     hero: {
       title: 'Software Engineer',
       subtitle: 'Software Engineer & AI Trainer',
+      emailSubject: 'Inquiry about collaboration - Software Engineer',
+      emailBody: 'Hello,\n\nI would like to discuss collaboration as a Software Engineer. I am interested in your experience in React/TypeScript and AI integration. Please contact me to discuss the details.\n\nBest regards',
     },
   },
   webDevOffer: {
@@ -228,6 +241,102 @@ const translation = {
       title: 'Web Development',
       description: 'Modern websites and CMS systems for self-managed content.',
       subtitle: 'Websites & Digital Solutions',
+      emailSubject: 'Inquiry about website development',
+      emailBody: 'Hello,\n\nI would like to discuss creating a website. I am interested in a modern website with the ability to self-manage content. Please contact me to discuss the project details.\n\nBest regards',
+    },
+  },
+  instagramBeauty: {
+    hero: {
+      title: 'Turn Your Instagram into a Full Business',
+      description: 'No more booking clients through DMs or Booksy. Your website will work as your own booking platform – with portfolio, pricing, online booking, and 24/7 sales capability.',
+      cta: 'Schedule a Consultation',
+      emailSubject: 'Consultation - Beauty Business Website',
+      emailBody: 'Hello,\n\nI would like to schedule a consultation about creating a website for my beauty business. I am interested in a website with online booking and sales capabilities. Please contact me to discuss the details.\n\nBest regards',
+    },
+    services: {
+      heading: 'Services',
+      portfolio: {
+        title: 'Portfolio Website + Online Booking',
+        description: 'Your website will look like a professional business card: portfolio with transformations, pricing, service descriptions, and online booking calendar. Clients choose the service and time themselves, and you save time on organization.',
+      },
+      landingPage: {
+        title: 'Mini-App / Landing Page',
+        description: 'Landing page for a specific product or package – fast, intuitive, and optimized for sales. Clients book or contact through a form, and you focus on what matters most.',
+      },
+      shop: {
+        title: 'Website + Online Shop',
+        description: 'Sell cosmetics, packages, styling, and services online – without the need for 1:1 contact. Clients buy, pay, and confirm online, and you earn 24/7.',
+      },
+      ai: {
+        title: 'Website + AI Integration',
+        description: 'Bring AI to your business: chatbot answers questions, automates bookings, and helps select packages. Your website will work like an intelligent assistant.',
+      },
+      cta: 'Want to know how this will work for your business? Let\'s talk.',
+      emailSubject: 'Question about services - Beauty Website',
+      emailBody: 'Hello,\n\nI would like to discuss services for my beauty business. I am interested in how your solutions can help with booking automation and online sales. Please contact me.\n\nBest regards',
+    },
+    target: {
+      heading: 'Who is this for?',
+      who: {
+        title: 'Who?',
+        description: 'Beauty business owners who already have clients on Instagram but want to look professional, have their own website, and sell online.',
+      },
+      needs: {
+        title: 'What do they need?',
+        items: [
+          'A professional business card that\'s not limited to an Instagram profile.',
+          'Fast online booking and sales.',
+          'Time savings on appointment organization and communication.',
+          'Ability to sell packages, cosmetics, and services without 1:1 contact.',
+        ],
+      },
+    },
+    process: {
+      heading: 'How I Work',
+      steps: [
+        {
+          title: 'Brief',
+          description: 'We discuss your needs and expectations.',
+        },
+        {
+          title: 'Consultation',
+          description: 'We select the best solutions.',
+        },
+        {
+          title: 'Visual Design',
+          description: 'Your website will match your style.',
+        },
+        {
+          title: 'Implementation',
+          description: 'I build the website according to your requirements.',
+        },
+        {
+          title: 'Testing & Launch',
+          description: 'We check everything together.',
+        },
+        {
+          title: 'Support',
+          description: 'I help you at every stage.',
+        },
+      ],
+      cta: 'Fill out the form or send a message',
+      emailSubject: 'Question about collaboration process',
+      emailBody: 'Hello,\n\nI would like to learn more about the collaboration process when creating a website. I am interested in how the project implementation looks from start to finish. Please contact me.\n\nBest regards',
+      meetingInfo: {
+        online: 'Meetings are mainly online – we discuss everything from anywhere in the world.',
+        wroclaw: 'If you want, we can also meet in person in Wrocław.',
+      },
+    },
+    quiz: {
+      heading: 'Is This for You?',
+      questions: [
+        'Do you have many clients, but they always have to DM you before booking an appointment?',
+        'Would you like to be able to sell packages, cosmetics, or services online without 1:1 contact?',
+        'Do you dream of your own website that works like your booking platform – with calendar, clients, and payments?',
+      ],
+      cta: 'This is what I do. Send me a message.',
+      emailSubject: 'This is for me! - Beauty Website',
+      emailBody: 'Hello,\n\nI answered "yes" to the quiz questions and would like to learn more about your offer. I need a website with online booking for my beauty business. Please contact me.\n\nBest regards',
     },
   },
 } as const

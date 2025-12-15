@@ -1,15 +1,17 @@
 import { BrowserRouter as Router, Routes, Route, useSearchParams } from 'react-router-dom'
 import { useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
-import { ThemeProvider } from './context/ThemeContext'
+import { ThemeProvider, useTheme } from './context/ThemeContext'
 import Home from './pages/Home'
 import SoftwareEngineer from './pages/SoftwareEngineer'
 import WebDevOffer from './pages/WebDevOffer'
 import AiWorkshops from './pages/AiWorkshops'
+import InstagramBeauty from './pages/InstagramBeauty'
 import './App.css'
 
 function AppContent() {
   const { i18n } = useTranslation()
+  const { theme, setTheme } = useTheme()
   const [searchParams] = useSearchParams()
 
   useEffect(() => {
@@ -19,7 +21,14 @@ function AppContent() {
         void i18n.changeLanguage(langParam)
       }
     }
-  }, [searchParams, i18n])
+
+    const themeParam = searchParams.get('theme')
+    if (themeParam && (themeParam === 'light' || themeParam === 'dark')) {
+      if (theme !== themeParam) {
+        setTheme(themeParam)
+      }
+    }
+  }, [searchParams, i18n, theme, setTheme])
 
   return (
     <Routes>
@@ -27,6 +36,7 @@ function AppContent() {
       <Route path="/software-engineer" element={<SoftwareEngineer />} />
       <Route path="/web-development" element={<WebDevOffer />} />
       <Route path="/ai-workshops" element={<AiWorkshops />} />
+      <Route path="/instagram-beauty" element={<InstagramBeauty />} />
     </Routes>
   )
 }

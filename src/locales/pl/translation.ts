@@ -29,6 +29,8 @@ const translation = {
     description:
       'Software Engineer łącząca frontend z AI. Tworzę skalowalne interfejsy w React/TypeScript i wdrażam funkcje oparte na modelach językowych, które realnie przyspieszają pracę zespołów produktowych.',
     subtitle: 'Software Engineer & AI Trainer',
+    emailSubject: 'Zapytanie ofertowe - Pure Code',
+    emailBody: 'Dzień dobry,\n\nChciałbym/Chciałabym porozmawiać na temat Twojej oferty. Interesuje mnie współpraca i chciałbym/chciałabym poznać więcej szczegółów.\n\nPozdrawiam',
   },
   services: {
     heading: 'Moje Usługi',
@@ -47,6 +49,11 @@ const translation = {
       description: 'Nowoczesne strony internetowe i systemy CMS do samodzielnego zarządzania treścią.',
       cta: 'Zobacz ofertę',
     },
+    instagramBeauty: {
+      title: 'Instagram Beauty',
+      description: 'Strony z rezerwacją online dla biznesów beauty – zamień swój Instagram w pełnoprawny biznes.',
+      cta: 'Zobacz ofertę',
+    },
   },
   about: {
     headingLinePrimary: 'Senior Software Engineer',
@@ -60,7 +67,7 @@ const translation = {
     headingTop: 'Moje',
     headingBottom: 'Projekty',
     note:
-      'Moje najnowsze projekty',
+      '• Buduję aplikacje i strony, które sprzedają za Ciebie 24/7.\n• Automatyzuję sprzedaż, płatności i newslettery – nie przejmujesz się tematami technicznymi.\n• Portfolio w 24 h - szybki start, mobilne, zintegrowane z Instagramem.',
     items: {
       manianaa: 'https://manianaa.com/',
       joannaadamek: 'https://joannaadamek.com.pl/',
@@ -185,12 +192,16 @@ const translation = {
   },
   contact: {
     heading: 'Skontaktuj się',
+    emailSubject: 'Zapytanie o ofertę - Portfolio Pure Code',
+    emailBody: 'Dzień dobry,\n\nChciałbym/Chciałabym porozmawiać na temat Twojej oferty. Proszę o kontakt w celu omówienia szczegółów.\n\nPozdrawiam',
   },
   aiWorkshops: {
     hero: {
       title: 'Warsztaty AI',
       description: 'Praktyczne warsztaty z zastosowań sztucznej inteligencji w biznesie i rozwoju oprogramowania.',
       subtitle: 'Szkolenia AI i Warsztaty',
+      emailSubject: 'Zapytanie o warsztaty AI',
+      emailBody: 'Dzień dobry,\n\nChciałbym/Chciałabym porozmawiać na temat Twoich warsztatów AI. Interesuje mnie organizacja szkolenia dla mojej firmy/zespołu. Proszę o kontakt w celu omówienia szczegółów.\n\nPozdrawiam',
     },
     upcomingTrainings: {
       heading: 'Nadchodzące Szkolenia',
@@ -223,6 +234,8 @@ const translation = {
     hero: {
       title: 'Software Engineer',
       subtitle: 'Software Engineer & AI Trainer',
+      emailSubject: 'Zapytanie o współpracę - Software Engineer',
+      emailBody: 'Dzień dobry,\n\nChciałbym/Chciałabym porozmawiać na temat współpracy jako Software Engineer. Interesuje mnie Twoje doświadczenie w React/TypeScript i integracji z AI. Proszę o kontakt w celu omówienia szczegółów.\n\nPozdrawiam',
     },
   },
   webDevOffer: {
@@ -230,6 +243,102 @@ const translation = {
       title: 'Web Development',
       description: 'Nowoczesne strony internetowe i systemy CMS do samodzielnego zarządzania treścią.',
       subtitle: 'Strony internetowe i rozwiązania cyfrowe',
+      emailSubject: 'Zapytanie o stronę internetową',
+      emailBody: 'Dzień dobry,\n\nChciałbym/Chciałabym porozmawiać na temat stworzenia strony internetowej. Interesuje mnie nowoczesna strona z możliwością samodzielnego zarządzania treścią. Proszę o kontakt w celu omówienia szczegółów projektu.\n\nPozdrawiam',
+    },
+  },
+  instagramBeauty: {
+    hero: {
+      title: 'Zamień swój Instagram w pełnoprawny biznes',
+      description: 'Nie musisz już zapisywać klientek przez DM ani Booksy. Twoja strona będzie działać jak Twoja własna platforma rezerwacyjna – z portfolio, cennikiem, rezerwacją online i możliwością sprzedaży 24/7.',
+      cta: 'Umów się na konsultację',
+      emailSubject: 'Konsultacja - Strona dla biznesu beauty',
+      emailBody: 'Dzień dobry,\n\nChciałabym umówić się na konsultację w sprawie stworzenia strony dla mojego biznesu beauty. Interesuje mnie strona z rezerwacją online i możliwością sprzedaży. Proszę o kontakt w celu omówienia szczegółów.\n\nPozdrawiam',
+    },
+    services: {
+      heading: 'Usługi',
+      portfolio: {
+        title: 'Strona z portfolio + rezerwacją online',
+        description: 'Twoja strona będzie wyglądać jak profesjonalna wizytówka: portfolio z transformacjami, cennik, opisy usług i kalendarz rezerwacji online. Klientki samodzielnie wybierają usługę i godzinę, a Ty oszczędzasz czas na organizacji.',
+      },
+      landingPage: {
+        title: 'Mini-aplikacja / landing page',
+        description: 'Strona typu landing dla konkretnego produktu lub pakietu – szybka, intuicyjna i zoptymalizowana pod sprzedaż. Klientki rezerwują lub kontaktują się przez formularz, a Ty skupiasz się na tym, co najważniejsze.',
+      },
+      shop: {
+        title: 'Strona + sklep online',
+        description: 'Sprzedawaj kosmetyki, pakiety, stylizacje i usługi online – bez konieczności kontaktu 1:1. Klientki kupują, płacą i potwierdzają online, a Ty zarabiasz 24/7.',
+      },
+      ai: {
+        title: 'Strona + integracja z AI',
+        description: 'Wprowadź AI do swojego biznesu: chatbot odpowiada na pytania, automatyzuje rezerwacje i pomaga dobierać pakiety. Twoja strona będzie działać jak inteligentny asystent.',
+      },
+      cta: 'Chcesz wiedzieć, jak to będzie działać dla Twojego biznesu? Porozmawiajmy! 📲',
+      emailSubject: 'Pytanie o usługi - Strona beauty',
+      emailBody: 'Dzień dobry,\n\nChciałabym porozmawiać o usługach dla mojego biznesu beauty. Interesuje mnie, jak Twoje rozwiązania mogą pomóc w automatyzacji rezerwacji i sprzedaży online. Proszę o kontakt.\n\nPozdrawiam',
+    },
+    target: {
+      heading: 'Dla kogo jest ta oferta?',
+      who: {
+        title: 'Kto może skorzystać z tej oferty?',
+        description: 'Właścicielki biznesów beauty, które mają już klientów na Instagramie, ale chcą wyglądać profesjonalnie, mieć własną stronę i sprzedawać online.',
+      },
+      needs: {
+        title: 'Potrzebujesz?',
+        items: [
+          'Profesjonalnej wizytówki, która nie ogranicza się do profilu Instagram.',
+          'Szybkiej rezerwacji i sprzedaży online.',
+          'Oszczędności czasu na organizacji wizyt i komunikacji.',
+          'Możliwości sprzedaży pakietów, kosmetyków i usług bez konieczności kontaktu 1:1.',
+        ],
+      },
+    },
+    process: {
+      heading: 'Jak pracuję',
+      steps: [
+        {
+          title: 'Brief',
+          description: 'Omawiamy Twoje potrzeby i oczekiwania.',
+        },
+        {
+          title: 'Konsultacja',
+          description: 'Dobieramy najlepsze rozwiązania.',
+        },
+        {
+          title: 'Projekt wizualny',
+          description: 'Twoja strona będzie pasować do Twojego stylu.',
+        },
+        {
+          title: 'Implementacja',
+          description: 'Buduję stronę zgodnie z Twoimi wymaganiami.',
+        },
+        {
+          title: 'Testy i wdrożenie',
+          description: 'Sprawdzamy wszystko razem.',
+        },
+        {
+          title: 'Wsparcie',
+          description: 'Pomagam Ci na każdym etapie.',
+        },
+      ],
+      cta: 'Napisz wiadomość',
+      emailSubject: 'Pytanie o proces współpracy',
+      emailBody: 'Dzień dobry,\n\nChciałabym dowiedzieć się więcej o procesie współpracy przy tworzeniu strony. Interesuje mnie, jak wygląda realizacja projektu od początku do końca. Proszę o kontakt.\n\nPozdrawiam',
+      meetingInfo: {
+        online: 'Głównie spotkania są online – omawiamy wszystko z każdego końca świata.',
+        wroclaw: 'Jeśli chcesz, możemy się też spotkać na żywo we Wrocławiu.',
+      },
+    },
+    quiz: {
+      heading: 'Czy to dla Ciebie?',
+      questions: [
+        'Czy masz sporo klientów, ale zawsze muszą pisać na DM, zanim zarezerwują wizytę?',
+        'Czy chciałabyś mieć możliwość sprzedaży pakietów, kosmetyków lub usług online, bez konieczności kontaktu 1:1?',
+        'Czy marzysz o własnej stronie, która działa jak Twoja platforma rezerwacyjna – z kalendarzem, klientami i płatnościami?',
+      ],
+      cta: 'Kliknij tutaj, aby dowiedzieć się więcej',
+      emailSubject: 'To jest dla mnie! - Strona beauty',
+      emailBody: 'Dzień dobry,\n\nOdpowiedziałam "tak" na pytania z quizu i chciałabym dowiedzieć się więcej o Twojej ofercie. Potrzebuję strony z rezerwacją online dla mojego biznesu beauty. Proszę o kontakt.\n\nPozdrawiam',
     },
   },
 } as const

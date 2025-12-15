@@ -1,19 +1,18 @@
 import type { ReactNode } from 'react'
 import { useTranslation } from 'react-i18next'
+import { useTheme } from '../context/ThemeContext'
 import SectionWrapper from '../components/SectionWrapper'
 import PageHeader from '../components/PageHeader'
 import './styles/SoftwareEngineer.css'
-import magicStar from '../assets/magicstar.svg'
-import orangeBow from '../assets/orangebow.svg'
-import inMyMind00005hori from '../assets/inMyMind00005hori.png'
-import niceCode from '../assets/niceCode.png'
+import magicStar from '../assets/magic-star.svg'
+import orangeBow from '../assets/orange-bow.svg'
+import inMyMind00005hori from '../assets/in-my-mind-00005-hori.png'
+import darkmodeNidleshori from '../assets/darkmode-nidles-hori.png'
 import linkedin from '../assets/linkedin.svg'
 import github from '../assets/github.svg'
-import pureCodeLogo from '../assets/pureCodeLogo.png'
-import myView1 from '../assets/myView1.png'
-import pinkBrainThinks from '../assets/pinkBrainThinks.png'
-import inMyMind00004 from '../assets/inMyMind00004.png'
-import circlecake from '../assets/circlecake.svg'
+import pureCodeLogo from '../assets/pure-code-logo.png'
+import myViewDarkMode from '../assets/my-view-dark-mode.png'
+import myViewLightMode from '../assets/my-view-light-mode.png'
 
 type SectionConfig = {
   readonly id: string
@@ -24,6 +23,7 @@ type SectionConfig = {
 
 const SoftwareEngineer = () => {
   const { t } = useTranslation()
+  const { theme } = useTheme()
 
   const skillsItems = [
     {
@@ -101,7 +101,7 @@ const SoftwareEngineer = () => {
           </div>
           <div className="about__visual">
             <img
-              src={inMyMind00005hori}
+              src={theme === 'dark' ? darkmodeNidleshori : inMyMind00005hori}
               alt={t('about.visualAlt')}
               className="about__image"
               loading="lazy"
@@ -117,14 +117,6 @@ const SoftwareEngineer = () => {
       className: 'section-wrapper--skills',
       content: (
         <div className="skills">
-          <div className="skills__visual">
-            <img
-              src={niceCode}
-              alt={t('skills.visualAlt')}
-              className="skills__image"
-              loading="lazy"
-            />
-          </div>
           <div className="skills__content">
             <div className="skills__heading">
               <img
@@ -183,7 +175,7 @@ const SoftwareEngineer = () => {
           </div>
           <div className="experience__visual">
             <img
-              src={myView1}
+            src={theme === 'dark' ? myViewDarkMode : myViewLightMode}
               alt={t('experience.visualAlt')}
               className="experience__image"
               loading="lazy"
@@ -199,14 +191,6 @@ const SoftwareEngineer = () => {
       className: 'section-wrapper--certifications',
       content: (
         <div className="certifications">
-          <div className="certifications__visual">
-            <img
-              src={pinkBrainThinks}
-              alt={t('certifications.visualAlt')}
-              className="certifications__image"
-              loading="lazy"
-            />
-          </div>
           <div className="certifications__content">
             <div className="certifications__heading">
               <img
@@ -274,14 +258,6 @@ const SoftwareEngineer = () => {
       className: 'section-wrapper--education',
       content: (
         <div className="education">
-          <div className="education__visual">
-            <img
-              src={inMyMind00004}
-              alt={t('education.visualAlt')}
-              className="education__image"
-              loading="lazy"
-            />
-          </div>
           <div className="education__content">
             <div className="education__heading">
               <img
@@ -306,14 +282,6 @@ const SoftwareEngineer = () => {
       className: 'section-wrapper--languages',
       content: (
         <div className="languages">
-          <div className="languages__visual">
-            <img
-              src={circlecake}
-              alt={t('languages.visualAlt')}
-              className="languages__image"
-              loading="lazy"
-            />
-          </div>
           <div className="languages__content">
             <div className="languages__heading">
               <img
@@ -382,7 +350,10 @@ const SoftwareEngineer = () => {
               <a className="contact__detail" href="tel:+48530131800">
                 530&nbsp;131&nbsp;800
               </a>
-              <a className="contact__detail" href="mailto:klaudia.bodyk@icloud.com">
+              <a 
+                className="contact__detail" 
+                href={`mailto:klaudia.bodyk@icloud.com?subject=${encodeURIComponent(t('contact.emailSubject'))}&body=${encodeURIComponent(t('contact.emailBody'))}`}
+              >
                 klaudia.bodyk@icloud.com
               </a>
             </div>
@@ -416,4 +387,3 @@ const SoftwareEngineer = () => {
 }
 
 export default SoftwareEngineer
-

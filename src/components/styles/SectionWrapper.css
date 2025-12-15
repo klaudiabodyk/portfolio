@@ -1,7 +1,6 @@
 .section-wrapper {
   width: 100%;
   background-color: var(--bg-section);
-  padding: 64px 24px;
   box-sizing: border-box;
   border-radius: 12px;
   border: 1px solid var(--border-color);
@@ -12,6 +11,7 @@
   align-items: center;
   text-align: center;
   transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: clamp(32px, 5vw, 64px);
 }
 
 .section-wrapper h2 {
@@ -59,14 +59,6 @@
   gap: clamp(32px, 5vw, 64px);
   padding: clamp(64px, 10vw, 120px) clamp(24px, 6vw, 64px);
 }
-
-.section-wrapper--skills {
-  align-items: stretch;
-  text-align: left;
-  gap: clamp(32px, 5vw, 64px);
-  padding: clamp(64px, 10vw, 120px) clamp(24px, 6vw, 64px);
-}
-
 .section-wrapper--services {
   align-items: stretch;
   text-align: left;
@@ -81,205 +73,153 @@
   padding: clamp(72px, 12vw, 128px) clamp(24px, 6vw, 64px);
 }
 
-/* Initial state for sections */
-.section-wrapper {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out, background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
-  will-change: opacity, transform;
+.section-wrapper--skills {
+  align-items: stretch;
+  text-align: left;
+  gap: clamp(32px, 5vw, 64px);
+  padding: clamp(64px, 10vw, 120px) clamp(24px, 6vw, 64px);
 }
 
-/* Visible state when scrolled into view */
+.section-wrapper--certifications {
+  align-items: stretch;
+  text-align: left;
+  gap: clamp(32px, 5vw, 64px);
+  padding: clamp(64px, 10vw, 120px) clamp(24px, 6vw, 64px);
+}
+
+.section-wrapper--education {
+  align-items: stretch;
+  text-align: left;
+  gap: clamp(32px, 5vw, 64px);
+  padding: clamp(64px, 10vw, 120px) clamp(24px, 6vw, 64px);
+}
+
+.section-wrapper--languages {
+  align-items: stretch;
+  text-align: left;
+  gap: clamp(32px, 5vw, 64px);
+  padding: clamp(64px, 10vw, 120px) clamp(24px, 6vw, 64px);
+}
+
+.section-wrapper--experience {
+  align-items: stretch;
+  text-align: left;
+  gap: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.section-wrapper--beauty-services {
+  align-items: stretch;
+  text-align: left;
+  gap: clamp(32px, 5vw, 64px);
+  padding: clamp(64px, 10vw, 120px) clamp(24px, 6vw, 64px);
+}
+
+.section-wrapper--target {
+  align-items: stretch;
+  text-align: left;
+  gap: clamp(32px, 5vw, 64px);
+  padding: clamp(64px, 10vw, 120px) clamp(24px, 6vw, 64px);
+}
+
+.section-wrapper--process {
+  align-items: stretch;
+  text-align: left;
+  gap: clamp(32px, 5vw, 64px);
+  padding: clamp(64px, 10vw, 120px) clamp(24px, 6vw, 64px);
+}
+
+.section-wrapper--quiz {
+  align-items: stretch;
+  text-align: left;
+  gap: clamp(32px, 5vw, 64px);
+  padding: clamp(64px, 10vw, 120px) clamp(24px, 6vw, 64px);
+}
+
+.section-wrapper--upcoming-trainings {
+  align-items: stretch;
+  text-align: left;
+  gap: clamp(32px, 5vw, 64px);
+  padding: clamp(64px, 10vw, 120px) clamp(24px, 6vw, 64px);
+}
+
 .section-wrapper.is-visible {
   opacity: 1;
   transform: translateY(0);
-}
-
-@media (max-width: 960px) {
-  .section-wrapper--about {
-    align-items: center;
-    text-align: center;
-  }
-
-  .about {
-    flex-direction: column;
-    min-height: auto;
-  }
-
-  .about__content {
-    padding: clamp(48px, 12vw, 72px) clamp(20px, 7vw, 48px);
-    align-items: center;
-    text-align: center;
-  }
-
-  .about__visual {
-    justify-content: center;
-    box-shadow: none;
-    min-height: 240px;
-  }
-
-  .about__image {
-    border-radius: 24px;
-    width: 240px;
-    height: 240px;
-    object-fit: cover;
-    margin-bottom: 24px;
-  }
-
-  .about__heading {
-    align-items: center;
-  }
-
-  .about__heading-line {
-    letter-spacing: 0.1em;
-  }
-
-  .about__meta {
-    letter-spacing: 0.28em;
-  }
-
-  .section-wrapper--projects {
-    padding: clamp(56px, 14vw, 96px) clamp(20px, 7vw, 48px);
-  }
-
-  .projects__content {
-    flex-direction: column;
-  }
-
-  .projects__gallery {
-    width: 100%;
-  }
-
-  .projects__note {
-    max-width: none;
-    flex-direction: row;
-    align-items: center;
-    gap: 20px;
-  }
-
-  .section-wrapper--lecturer {
-    padding: clamp(56px, 14vw, 96px) clamp(20px, 7vw, 48px);
-  }
-
-  .lecturer__heading {
-    text-align: center;
-    align-items: center;
-  }
-
-  .lecturer__body {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .lecturer__details {
-    max-width: none;
-    align-items: center;
-    text-align: center;
-  }
-
-  .lecturer__visual {
-    justify-content: center;
-  }
-
-  .lecturer__image {
-    width: min(100%, 420px);
-    display: none;
-  }
-
-  .section-wrapper--solutions {
-    padding: clamp(56px, 14vw, 96px) clamp(20px, 7vw, 48px);
-  }
-
-  .solutions {
-    flex-direction: column;
-  }
-
-  .solutions__media {
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  }
-
-  .solutions__heading {
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .solutions__content {
-    align-items: center;
-    text-align: center;
-  }
-
-  .section-wrapper--skills {
-    padding: clamp(56px, 14vw, 96px) clamp(20px, 7vw, 48px);
-  }
-
-  .skills {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .skills__heading {
-    align-items: center;
-  }
-
-  .skills__content {
-    align-items: center;
-    text-align: center;
-  }
-
-  .skills__list li {
-    align-items: center;
-  }
-
-  .skills__icon {
-    align-self: center;
-  }
-
-  .section-wrapper--contact {
-    padding: clamp(64px, 16vw, 104px) clamp(20px, 7vw, 48px);
-    text-align: center;
-  }
-
-  .contact {
-    align-items: center;
-  }
-
-  .contact__content {
-    flex-direction: column;
-    gap: 32px;
-    align-items: center;
-  }
-
-  .contact__links {
-    justify-content: center;
-  }
-
-  .contact__details {
-    align-items: center;
-    text-align: center;
-  }
-
-  .services__grid {
-    grid-template-columns: 1fr;
-  }
-
-  .service-card {
-    padding: 24px;
-  }
-
-  .services__heading {
-    font-size: clamp(2.4rem, 8vw, 3.6rem);
-  }
 }
 
 @media (max-width: 768px) {
   .section-wrapper h2 {
     font-size: 48px;
   }
+
+  .section-wrapper--hero {
+    padding: clamp(56px, 10vw, 96px) 20px;
+  }
+
+  .section-wrapper--projects,
+  .section-wrapper--lecturer,
+  .section-wrapper--solutions,
+  .section-wrapper--services,
+  .section-wrapper--skills,
+  .section-wrapper--certifications,
+  .section-wrapper--education,
+  .section-wrapper--languages,
+  .section-wrapper--beauty-services,
+  .section-wrapper--target,
+  .section-wrapper--process,
+  .section-wrapper--quiz,
+  .section-wrapper--upcoming-trainings {
+    padding: clamp(48px, 8vw, 80px) clamp(20px, 5vw, 48px);
+  }
+
+  .section-wrapper--contact {
+    padding: clamp(56px, 10vw, 96px) clamp(20px, 5vw, 48px);
+  }
 }
 
 @media (max-width: 480px) {
+  .section-wrapper {
+    border-radius: 8px;
+  }
+
   .section-wrapper h2 {
     font-size: 36px;
   }
+
+  .section-wrapper p {
+    font-size: 0.95rem;
+  }
+
+  .section-wrapper--hero {
+    gap: 32px;
+    padding: clamp(48px, 8vw, 72px) 16px;
+  }
+
+  .section-wrapper--about,
+  .section-wrapper--experience {
+    padding: 0;
+  }
+
+  .section-wrapper--projects,
+  .section-wrapper--lecturer,
+  .section-wrapper--solutions,
+  .section-wrapper--services,
+  .section-wrapper--skills,
+  .section-wrapper--certifications,
+  .section-wrapper--education,
+  .section-wrapper--languages,
+  .section-wrapper--beauty-services,
+  .section-wrapper--target,
+  .section-wrapper--process,
+  .section-wrapper--quiz,
+  .section-wrapper--upcoming-trainings {
+    padding: clamp(40px, 6vw, 64px) clamp(16px, 4vw, 32px);
+  }
+
+  .section-wrapper--contact {
+    padding: clamp(48px, 8vw, 72px) clamp(16px, 4vw, 32px);
+  }
 }
+
