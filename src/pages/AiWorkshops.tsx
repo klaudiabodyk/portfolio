@@ -167,7 +167,10 @@ const AiWorkshops = () => {
               <a className="contact__detail" href="tel:+48530131800">
                 530&nbsp;131&nbsp;800
               </a>
-              <a className="contact__detail" href="mailto:klaudia.bodyk@icloud.com">
+              <a 
+                className="contact__detail" 
+                href={`mailto:klaudia.bodyk@icloud.com?subject=${encodeURIComponent(t('contact.emailSubject'))}&body=${encodeURIComponent(t('contact.emailBody'))}`}
+              >
                 klaudia.bodyk@icloud.com
               </a>
             </div>

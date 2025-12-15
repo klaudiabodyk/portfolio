@@ -82,11 +82,6 @@ const ProjectCarousel = () => {
     },
     {
       id: 3,
-      title: 'https://dashboardmaniany.netlify.app',
-      image: project3,
-    },
-    {
-      id: 4,
       title: 'https://salazabawdiggers.pl',
       image: project4,
     },

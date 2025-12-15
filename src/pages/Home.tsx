@@ -25,7 +25,10 @@ function Home() {
       className: 'section-wrapper--hero',
       content: (
         <div className="hero">
-          <a className="hero__cta" href="mailto:klaudia.bodyk@icloud.com">
+          <a 
+            className="hero__cta" 
+            href={`mailto:klaudia.bodyk@icloud.com?subject=${encodeURIComponent(t('hero.emailSubject'))}&body=${encodeURIComponent(t('hero.emailBody'))}`}
+          >
             {t('hero.cta')}
           </a>
           <div className="hero__title">
@@ -67,6 +70,13 @@ function Home() {
                 <h3 className="service-card__title">{t('services.webDevOffer.title')}</h3>
                 <p className="service-card__description">{t('services.webDevOffer.description')}</p>
                 <span className="service-card__cta">{t('services.webDevOffer.cta')}</span>
+              </div>
+            </a>
+            <a href="/instagram-beauty" className="service-card">
+              <div className="service-card__content">
+                <h3 className="service-card__title">{t('services.instagramBeauty.title')}</h3>
+                <p className="service-card__description">{t('services.instagramBeauty.description')}</p>
+                <span className="service-card__cta">{t('services.instagramBeauty.cta')}</span>
               </div>
             </a>
           </div>
@@ -113,7 +123,10 @@ function Home() {
               <a className="contact__detail" href="tel:+48530131800">
                 530&nbsp;131&nbsp;800
               </a>
-              <a className="contact__detail" href="mailto:klaudia.bodyk@icloud.com">
+              <a 
+                className="contact__detail" 
+                href={`mailto:klaudia.bodyk@icloud.com?subject=${encodeURIComponent(t('contact.emailSubject'))}&body=${encodeURIComponent(t('contact.emailBody'))}`}
+              >
                 klaudia.bodyk@icloud.com
               </a>
             </div>

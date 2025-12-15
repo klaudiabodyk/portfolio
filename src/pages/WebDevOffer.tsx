@@ -3,7 +3,6 @@ import { useTranslation } from 'react-i18next'
 import SectionWrapper from '../components/SectionWrapper'
 import PageHeader from '../components/PageHeader'
 import './styles/WebDevOffer.css'
-import circleCake from '../assets/circlecake.svg'
 import magicStar from '../assets/magicstar.svg'
 import ProjectCarousel from '../components/ProjectCarousel'
 import { useTheme } from '../context/ThemeContext'
@@ -108,12 +107,6 @@ const WebDevOffer = () => {
               <ProjectCarousel />
             </div>
             <div className="projects__note">
-              <img
-                src={circleCake}
-                alt=""
-                className="projects__note-icon"
-                aria-hidden="true"
-              />
               <p className="projects__note-text">
                 {t('projects.note')}
               </p>
@@ -162,7 +155,10 @@ const WebDevOffer = () => {
               <a className="contact__detail" href="tel:+48530131800">
                 530&nbsp;131&nbsp;800
               </a>
-              <a className="contact__detail" href="mailto:klaudia.bodyk@icloud.com">
+              <a 
+                className="contact__detail" 
+                href={`mailto:klaudia.bodyk@icloud.com?subject=${encodeURIComponent(t('contact.emailSubject'))}&body=${encodeURIComponent(t('contact.emailBody'))}`}
+              >
                 klaudia.bodyk@icloud.com
               </a>
             </div>

@@ -6,6 +6,7 @@ import Home from './pages/Home'
 import SoftwareEngineer from './pages/SoftwareEngineer'
 import WebDevOffer from './pages/WebDevOffer'
 import AiWorkshops from './pages/AiWorkshops'
+import InstagramBeauty from './pages/InstagramBeauty'
 import './App.css'
 
 function AppContent() {
@@ -27,6 +28,7 @@ function AppContent() {
       <Route path="/software-engineer" element={<SoftwareEngineer />} />
       <Route path="/web-development" element={<WebDevOffer />} />
       <Route path="/ai-workshops" element={<AiWorkshops />} />
+      <Route path="/instagram-beauty" element={<InstagramBeauty />} />
     </Routes>
   )
 }
