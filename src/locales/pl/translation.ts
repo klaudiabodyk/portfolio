@@ -278,13 +278,13 @@ const translation = {
       emailBody: 'Dzień dobry,\n\nChciałabym porozmawiać o usługach dla mojego biznesu beauty. Interesuje mnie, jak Twoje rozwiązania mogą pomóc w automatyzacji rezerwacji i sprzedaży online. Proszę o kontakt.\n\nPozdrawiam',
     },
     target: {
-      heading: 'Dla kogo?',
+      heading: 'Dla kogo jest ta oferta?',
       who: {
-        title: 'Kto to?',
+        title: 'Kto może skorzystać z tej oferty?',
         description: 'Właścicielki biznesów beauty, które mają już klientów na Instagramie, ale chcą wyglądać profesjonalnie, mieć własną stronę i sprzedawać online.',
       },
       needs: {
-        title: 'Czego potrzebują?',
+        title: 'Potrzebujesz?',
         items: [
           'Profesjonalnej wizytówki, która nie ogranicza się do profilu Instagram.',
           'Szybkiej rezerwacji i sprzedaży online.',

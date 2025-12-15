@@ -3,15 +3,16 @@ import { useTranslation } from 'react-i18next'
 import { useTheme } from '../context/ThemeContext'
 import SectionWrapper from '../components/SectionWrapper'
 import PageHeader from '../components/PageHeader'
-import magicStar from '../assets/magicstar.svg'
-import orangeBow from '../assets/orangebow.svg'
-import inMyMind00005hori from '../assets/inMyMind00005hori.png'
-import darkmodeNidleshori from '../assets/darkmodeNidleshori.png'
+import './styles/SoftwareEngineer.css'
+import magicStar from '../assets/magic-star.svg'
+import orangeBow from '../assets/orange-bow.svg'
+import inMyMind00005hori from '../assets/in-my-mind-00005-hori.png'
+import darkmodeNidleshori from '../assets/darkmode-nidles-hori.png'
 import linkedin from '../assets/linkedin.svg'
 import github from '../assets/github.svg'
-import pureCodeLogo from '../assets/pureCodeLogo.png'
-import myViewDarkMode from '../assets/myviewdarkmode.png'
-import myViewLightMode from '../assets/myVIewlightmode.png'
+import pureCodeLogo from '../assets/pure-code-logo.png'
+import myViewDarkMode from '../assets/my-view-dark-mode.png'
+import myViewLightMode from '../assets/my-view-light-mode.png'
 
 type SectionConfig = {
   readonly id: string
@@ -386,4 +387,3 @@ const SoftwareEngineer = () => {
 }
 
 export default SoftwareEngineer
-

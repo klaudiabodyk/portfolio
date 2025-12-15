@@ -5,11 +5,11 @@ import PageHeader from '../components/PageHeader'
 import './styles/InstagramBeauty.css'
 import linkedin from '../assets/linkedin.svg'
 import github from '../assets/github.svg'
-import pureCodeLogo from '../assets/pureCodeLogo.png'
-import icon21 from '../assets/21.png'
-import icon22 from '../assets/22.png'
-import icon20 from '../assets/20.png'
-import icon24 from '../assets/24.png'
+import pureCodeLogo from '../assets/pure-code-logo.png'
+import icon21 from '../assets/icon-21.png'
+import icon22 from '../assets/icon-22.png'
+import icon20 from '../assets/icon-20.png'
+import icon24 from '../assets/icon-24.png'
 
 type SectionConfig = {
   readonly id: string

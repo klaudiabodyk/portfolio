@@ -3,14 +3,14 @@ import { useTranslation } from 'react-i18next'
 import SectionWrapper from '../components/SectionWrapper'
 import PageHeader from '../components/PageHeader'
 import './styles/WebDevOffer.css'
-import magicStar from '../assets/magicstar.svg'
+import magicStar from '../assets/magic-star.svg'
 import ProjectCarousel from '../components/ProjectCarousel'
 import { useTheme } from '../context/ThemeContext'
-import darkmodeNidles from '../assets/darkmodeNidles.png'
-import inMyMind00005 from '../assets/inMyMind00005.png'
+import darkmodeNidles from '../assets/darkmode-nidles.png'
+import inMyMind00005 from '../assets/in-my-mind-00005.png'
 import linkedin from '../assets/linkedin.svg'
 import github from '../assets/github.svg'
-import pureCodeLogo from '../assets/pureCodeLogo.png'
+import pureCodeLogo from '../assets/pure-code-logo.png'
 
 type SectionConfig = {
   readonly id: string
@@ -192,4 +192,3 @@ const WebDevOffer = () => {
 }
 
 export default WebDevOffer
-

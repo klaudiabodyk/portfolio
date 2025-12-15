@@ -1,0 +1,41 @@
+:root {
+  --bg-page: #f0f2f5;
+  --bg-section: #ffffff;
+  --text-primary: #1a1a1a;
+  --text-secondary: rgba(26, 26, 26, 0.82);
+  --text-muted: rgba(26, 26, 26, 0.6);
+  --text-accent: #9333ea;
+  --text-accent-hover: #7e22ce;
+  --border-color: rgba(0, 0, 0, 0.08);
+  --shadow-color: rgba(0, 0, 0, 0.08);
+  --btn-border: rgba(0, 0, 0, 0.15);
+  --btn-bg-hover: rgba(0, 0, 0, 0.05);
+  --btn-border-hover: rgba(0, 0, 0, 0.3);
+  --overlay-start: rgba(255, 255, 255, 0);
+  --overlay-mid: rgba(255, 255, 255, 0.4);
+  --overlay-end: #ffffff;
+  --contact-heading: #ea580c;
+  --contact-link-color: rgba(26, 26, 26, 0.92);
+  --bg-secondary: rgba(255, 255, 255, 0.95);
+}
+
+[data-theme='dark'] {
+  --bg-page: #080808;
+  --bg-section: #000000;
+  --text-primary: #f5f5f5;
+  --text-secondary: rgba(245, 245, 245, 0.82);
+  --text-muted: rgba(245, 245, 245, 0.6);
+  --text-accent: #c084fc;
+  --text-accent-hover: #d8b4fe;
+  --border-color: rgba(255, 255, 255, 0.12);
+  --shadow-color: rgba(0, 0, 0, 0.45);
+  --btn-border: rgba(255, 255, 255, 0.2);
+  --btn-bg-hover: rgba(255, 255, 255, 0.05);
+  --btn-border-hover: rgba(255, 255, 255, 0.4);
+  --overlay-start: rgba(0, 0, 0, 0);
+  --overlay-mid: rgba(0, 0, 0, 0.4);
+  --overlay-end: #000000;
+  --contact-heading: #ff6a00;
+  --contact-link-color: rgba(245, 245, 245, 0.92);
+  --bg-secondary: rgba(0, 0, 0, 0.95);
+}

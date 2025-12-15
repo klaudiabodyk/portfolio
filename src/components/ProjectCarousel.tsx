@@ -8,10 +8,9 @@ import 'swiper/css/pagination';
 import 'swiper/css/effect-coverflow';
 
 // Import project images
-import project1 from '../assets/Manianaa.png';
-import project2 from '../assets/Joanna Adamek.png';
-import project3 from '../assets/Dashboard.png';
-import project4 from '../assets/Koparki.png';
+import project1 from '../assets/manianaa.png';
+import project2 from '../assets/joanna-adamek.png';
+import project4 from '../assets/koparki.png';
 
 import './styles/ProjectCarousel.css';
 

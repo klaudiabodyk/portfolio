@@ -5,7 +5,7 @@ import PageHeader from '../components/PageHeader'
 import './styles/Home.css'
 import linkedin from '../assets/linkedin.svg'
 import github from '../assets/github.svg'
-import pureCodeLogo from '../assets/pureCodeLogo.png'
+import pureCodeLogo from '../assets/pure-code-logo.png'
 
 type SectionConfig = {
   readonly id: string
